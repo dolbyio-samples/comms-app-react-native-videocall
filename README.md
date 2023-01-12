@@ -1,8 +1,21 @@
 # Dolby.io Communications Video Call - React Native Mobile App
 
-## Readme
+![banner image](documentation/assets/banner%20image.png)
 
-This document serves as a guide on how to build the React Native Video Conference sample app for mobile from the source.
+This project demonstrates what a simple video meeting experience is like when built for a mobile device using React Native and TypeScript. 
+
+| Use cases          | Features                                             | Tech Stack   |
+| ------------------ | ---------------------------------------------------- | ------------ |
+| 1:1 calls          | Creating or joining a conference                     | TypeScript   |
+| Group calls        | Changing camera and mic settings                     | React Native |
+| Video Conferencing | Mute and unmute participants                         | iOS          |
+|                    | Participant Lists                                    | Android      |
+|                    | Detecting if a participant is speaking               |              |
+|                    | Displaying participants in a grid (<=6 participants) |              |
+|                    | Dynamically re-ordering participants                 |              |
+|                    | Creating a shareable link                            |              |
+
+Want to learn more? Check out our [React Native Sample App gallery page](https://docs.dolby.io/communications-apis/docs/sample-apps-react-native)!
 
 ## Pre-requisites
 
@@ -27,8 +40,11 @@ This setup guide is validated on both Intel/M1-based MacBook Pro running macOS M
 * Yarn version 1.22.19
 * Node version 16.17.1
 * Npm version 8.19.2
-* A [Dolby.io](https://dashboard.dolby.io/signup/) account
-* A Dolby.io [client access token](https://dashboard.dolby.io/dashboard/applications/summary)
+* A Dolby.io account
+
+### How to get a Dolby.io account
+
+To setup your Dolby.io account, go to the [Dolby.io dashboard](https://dashboard.dolby.io/signup/) and complete the form. After confirming your email address, you will be logged in.  
 
 ## Cloning the repo and installing the dependencies
 
@@ -93,7 +109,7 @@ You will see the following screen after the app compiles. This process should ta
 
 > Note: If you encounter the error `DolbyIOVideoCall.xcodeproj: error: No profile for team 'XYZ' matching 'Dolby IO Video Call Development'`, open the workspace `examples/mobile/ios/DolbyIOVideoCall.xcworkspace` in Xcode. Open the project **DolbyIOVideoCall** and click on the tab **Signing and Capabilities**. From there, change the *Bundle Identifier* as well as the *Provisioning Profiles* for both Debug and Release modes.
 
-## Building the Android App
+## Building the Android app
 
 The path to the Android SDK shall be defined either as an ENV variable or in the `local.properties` file.
 
@@ -123,26 +139,6 @@ In the other window, run this command - This can automatically trigger the step 
 yarn workspace comms-app-react-native-videocall android
 ```
 
-## Features
-
-The major features of this example app.
-
-* Allow participants to scan a QR code or enter an authentication token from Dolby.io Dashboard to login
-* Logout from the video calling app
-* Create/Join/Re-join/Leave a video conference call
-* Share a meeting link
-* Mute the mic
-* Mute all remote participants
-* Turn on/off the camera
-* Switch between the cameras
-* Show participants list and count
-* Show who is speaking
-* Show the video grid with 6 active speakers (if participants count <= 6)
-* Replace the least active speaker with a new active speaker, when the new active speaker turns on the camera or speaks without a camera
-* The participant who creates the meeting can record the meeting
-* Participants joining the meeting cannot start a recording
-* Meeting recordings can be accessed from the Dolby.io Dashboard
-
 ## Known Issues
 
 The known issues of this example app can be found [here](KNOWN-ISSUES.md).
@@ -152,3 +148,7 @@ The known issues of this example app can be found [here](KNOWN-ISSUES.md).
 The Dolby.io Communications Sample for React Native and its repository are licensed under the MIT License.
 
 Third-party licenses can be found [here](third-party-licenses.json).
+
+## More resources
+
+Looking for more sample apps and projects? Head to the [Project Gallery](https://docs.dolby.io/communications-apis/page/gallery).
