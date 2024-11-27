@@ -1,27 +1,4 @@
 GIT
-  remote: https://github.com/CocoaPods/CocoaPods.git
-  revision: f5ea2cf05f562428830d7d9288020c01f46628bc
-  specs:
-    cocoapods (1.11.3)
-      addressable (~> 2.8)
-      claide (>= 1.0.2, < 2.0)
-      cocoapods-core (= 1.11.3)
-      cocoapods-deintegrate (>= 1.0.3, < 2.0)
-      cocoapods-downloader (>= 1.6.0, < 2.0)
-      cocoapods-plugins (>= 1.0.0, < 2.0)
-      cocoapods-search (>= 1.0.0, < 2.0)
-      cocoapods-trunk (>= 1.6.0, < 2.0)
-      cocoapods-try (>= 1.1.0, < 2.0)
-      colored2 (~> 3.1)
-      escape (~> 0.0.4)
-      fourflusher (>= 2.3.0, < 3.0)
-      gh_inspector (~> 1.0)
-      molinillo (~> 0.8.0)
-      nap (~> 1.0)
-      ruby-macho (>= 2.3.0, < 3.0)
-      xcodeproj (>= 1.21.0, < 2.0)
-
-GIT
   remote: https://github.com/CocoaPods/Core.git
   revision: c6ac388ee43f0782fdb8e32386f41f96dbe29082
   specs:
@@ -72,6 +49,24 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     babosa (1.0.4)
     claide (1.1.0)
+    cocoapods (1.11.3)
+      addressable (~> 2.8)
+      claide (>= 1.0.2, < 2.0)
+      cocoapods-core (= 1.11.3)
+      cocoapods-deintegrate (>= 1.0.3, < 2.0)
+      cocoapods-downloader (>= 1.4.0, < 2.0)
+      cocoapods-plugins (>= 1.0.0, < 2.0)
+      cocoapods-search (>= 1.0.0, < 2.0)
+      cocoapods-trunk (>= 1.4.0, < 2.0)
+      cocoapods-try (>= 1.1.0, < 2.0)
+      colored2 (~> 3.1)
+      escape (~> 0.0.4)
+      fourflusher (>= 2.3.0, < 3.0)
+      gh_inspector (~> 1.0)
+      molinillo (~> 0.8.0)
+      nap (~> 1.0)
+      ruby-macho (>= 1.0, < 3.0)
+      xcodeproj (>= 1.21.0, < 2.0)
     cocoapods-deintegrate (1.0.5)
     cocoapods-downloader (1.6.3)
     cocoapods-plugins (1.0.0)
@@ -289,9 +284,10 @@ GEM
 
 PLATFORMS
   universal-darwin-21
+  x86_64-darwin-22
 
 DEPENDENCIES
-  cocoapods!
+  cocoapods (~> 1.11, >= 1.11.3)
   cocoapods-core!
   fastlane
   fastlane-plugin-firebase_app_distribution

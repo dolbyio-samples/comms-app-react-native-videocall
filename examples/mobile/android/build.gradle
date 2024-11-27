@@ -2,7 +2,6 @@
 
 buildscript {
     ext {
-        buildToolsVersion = "30.0.2"
         minSdkVersion = 21
         compileSdkVersion = 33
         targetSdkVersion = 33
@@ -13,11 +12,12 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:4.2.2")
+        classpath("com.android.tools.build:gradle:7.3.1")
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
         classpath 'com.google.firebase:firebase-appdistribution-gradle:3.1.0'
-        classpath("com.github.triplet.gradle:play-publisher:3.7.0-agp4.2")
+        classpath("com.github.triplet.gradle:play-publisher:3.8.3")
+        classpath("com.facebook.react:react-native-gradle-plugin")
     }
 }
 

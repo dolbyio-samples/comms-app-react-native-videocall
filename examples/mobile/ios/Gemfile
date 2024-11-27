@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-ruby '3.1.2'
+ruby File.read(File.join(__dir__, '.ruby-version')).strip
 
 gem "fastlane"
 gem "xcode-install"
-gem 'cocoapods', :git => 'https://github.com/CocoaPods/CocoaPods.git'
+gem 'cocoapods', '~> 1.11', '>= 1.11.3'
 gem 'cocoapods-core', :git => 'https://github.com/CocoaPods/Core.git'
 
 plugins_path = File.join(File.dirname(__FILE__), 'fastlane', 'Pluginfile')

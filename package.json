@@ -20,14 +20,14 @@
     "reset": "find . -type dir -name node_modules | xargs rm -rf && rm -rf yarn.lock"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.7",
-    "@babel/preset-env": "^7.16.11",
-    "@types/jest": "^27.4.1",
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@types/jest": "^29.2.1",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
-    "babel-jest": "^27.5.1",
+    "babel-jest": "^29.2.1",
     "babel-plugin-module-resolver": "^4.1.0",
-    "eslint": "^8.23.0",
+    "eslint": "^8.19.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-babel-module": "^5.3.1",
@@ -37,9 +37,9 @@
     "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",
     "license-checker": "^25.0.1",
-    "prettier": "2.7.1",
-    "ts-jest": "^27.1.3",
-    "typescript": "4.8.3"
+    "prettier": "^2.4.1",
+    "ts-jest": "^29.1.0",
+    "typescript": "4.8.4"
   },
   "workspaces": {
     "packages": [

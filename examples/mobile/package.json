@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@dolbyio/comms-sdk-react-native": "^3.8.0",
-    "@dolbyio/comms-uikit-react-native": "1.0.0",
+    "@dolbyio/comms-uikit-react-native": "1.1.0",
     "@gorhom/bottom-sheet": "^4",
     "@react-native-async-storage/async-storage": "^1.17.0",
     "@react-navigation/native": "^6.0.8",
@@ -19,35 +19,49 @@
     "@types/color": "3.0.3",
     "axios": "^0.27.2",
     "color": "4.2.3",
+    "deprecated-react-native-prop-types": "^4.1.0",
     "jwt-decode": "^3.1.2",
     "lottie-react-native": "^5.0.1",
     "react": "18.2.0",
     "react-intl": "~6.1.1",
-    "react-native": "0.67.2",
+    "react-native": "0.71.3",
     "react-native-camera": "^4.2.1",
     "react-native-encrypted-storage": "^4.0.2",
-    "react-native-gesture-handler": "^2.3.2",
-    "react-native-permissions": "^3.6.1",
+    "react-native-gesture-handler": "^2.10.2",
+    "react-native-permissions": "^3.8.0",
     "react-native-qrcode-scanner": "^1.5.5",
     "react-native-reanimated": "^2.12.0",
     "react-native-safe-area-context": "^4.2.2",
-    "react-native-screens": "^3.13.1"
+    "react-native-screens": "^3.13.1",
+    "react-native-svg": "^13.9.0"
+  },
+  "resolutions": {
+    "react-native-permissions": "^3.8.0"
+  },
+  "overrides": {
+    "react-native-qrcode-scanner": {
+      "react-native-permissions": "^3.8.0"
+    }
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@babel/runtime": "^7.12.5",
-    "@types/react": "18.0.18",
-    "@types/react-native": "0.64.1",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "metro-react-native-babel-preset": "^0.66.2",
-    "react-native-linear-gradient": "^2.5.6",
-    "react-native-svg": "^12.3.0",
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@tsconfig/react-native": "^2.0.2",
+    "@types/jest": "^29.2.1",
+    "@types/react": "^18.0.24",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.2.1",
+    "eslint": "^8.19.0",
+    "jest": "^29.2.1",
+    "metro-react-native-babel-preset": "0.73.7",
+    "prettier": "^2.4.1",
     "react-native-svg-transformer": "^1.0.0",
-    "react-test-renderer": "18.2.0"
+    "react-test-renderer": "18.2.0",
+    "typescript": "4.8.4"
   },
-  "rnpm": {
-    "assets": [
-      "./assets/fonts/"
-    ]
+  "jest": {
+    "preset": "react-native"
   }
 }

@@ -29,6 +29,11 @@ jobs:
           path: ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
+      # https://github.com/zoontek/react-native-permissions/issues/759
+      - name: Workaround to remove old RN permissions
+        run: |
+          rm -r node_modules/comms-app-react-native-videocall/node_modules/react-native-qrcode-scanner/node_modules/react-native-permissions
+
       - name: Install the signing certificate
         env:
           DISTRIBUTION_CERTIFICATE_ANDROID_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
